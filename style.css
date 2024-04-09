@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@font-face {
+    font-family: persian;
+    src: url(font/Parastoo.ttf);
+}
+
+body {
+    direction: rtl;
+    font-family: persian;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.navigation {
+    width: 100%;
+    height: 50px;
+    background-color: gainsboro;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container>ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+.container>ul>li>a {
+    line-height: 50px;
+    padding: 0 20px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.container>ul>li:hover>a {
+    background-color: gray;
+
+}
+
+.container>ul>li>ul {
+    position: absolute;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 120px;
+    display: none;
+
+}
+
+.container>ul>li:hover>ul {
+    display: block;
+}
+
+
+.container>ul>li>ul>li>a {
+    display: block;
+    padding: 5px 0;
+    padding-right: 5px;
+    transition: all 0.5s;
+
+}
+
+.container>ul>li>ul>li>a:hover {
+    background-color: gray;
+    color: aliceblue;
+}
+
+.container>ul>li>ul>li {
+    position: relative;
+}
+
+.container>ul>li>ul>li>ul {
+    position: absolute;
+    top: -3px;
+    right: 120px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    display: none;
+
+}
+
+.container>ul>li>ul>li:hover>ul {
+    display: block;
+}
+
+
+
+.container>ul>li>ul>li>ul>li {
+    position: relative;
+    font-size: 12px;
+    width: 120px;
+    /* display: none; */
+}
+
+.container>ul>li>ul>li>ul>li>a {
+    display: block;
+    padding: 5px 0;
+    padding-right: 5px;
+    transition: all 0.5s;
+
+
+}
+
+.container>ul>li>ul>li>ul>li>a:hover {
+    background-color: gray;
+}
